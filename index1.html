@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHG Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index1.html">GHG Calculator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Calculator</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="overall.html">Overall Emission</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="report.html">Emission Report</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Guide.html">Guidance</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="scopes.html">Scopes of GHG Emissions</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+    <div class="container col-lg-7 col-md-10 col-sm-11" id="hd">
+        <h1>NED University of Engineering and Technology</h1>
+        <h2>Greenhouse Gas  Emission Calculator</h2>
+
+        <form id="carbonFootprintForm">
+            <!-- Vehicle Emissions Section -->
+            <div class="section-title1">Vehicle Emissions</div>
+            <!-- Vehicle fields (similar to previous code for vehicles) -->
+             <!-- Student Cars Section -->
+             <!-- Student Cars Section -->
+<div class="section-title">Student Cars</div>
+<div class="form-row">
+    <div class="form-group">
+        <label for="studentCarCount">Number of Student Cars:</label>
+        <input type="number" class="form-control" id="studentCarCount" placeholder="Enter number of student cars">
+    </div>
+    <div class="form-group">
+        <label for="studentCarDistance">Average Distance per Car (km/month):</label>
+        <input type="number" class="form-control" id="studentCarDistance" placeholder="Enter distance">
+    </div>
+    
+</div>
+
+<!-- Staff Cars Section -->
+<div class="section-title">Staff Cars</div>
+<div class="form-row">
+    <div class="form-group">
+        <label for="staffCarCount">Number of Staff Cars:</label>
+        <input type="number" class="form-control" id="staffCarCount" placeholder="Enter number of staff cars">
+    </div>
+    <div class="form-group">
+        <label for="staffCarMileage">Mileage per Car (km/month):</label>
+        <input type="number" class="form-control" id="staffCarMileage" placeholder="Enter mileage">
+    </div>
+   
+
+</div>
+
+<!-- Student Bikes Section -->
+<div class="section-title">Student Bikes</div>
+<div class="form-row">
+    <div class="form-group">
+        <label for="studentBikeCount">Number of Student Bikes:</label>
+        <input type="number" class="form-control" id="studentBikeCount" placeholder="Enter number of student bikes">
+    </div>
+    <div class="form-group">
+        <label for="studentBikeMileage">Mileage per Bike (km/month):</label>
+        <input type="number" class="form-control" id="studentBikeMileage" placeholder="Enter mileage">
+    </div>
+    
+ 
+</div>
+
+<!-- Staff Bikes Section -->
+<div class="section-title">Staff Bikes</div>
+<div class="form-row">
+    <div class="form-group">
+        <label for="staffBikeCount">Number of Staff Bikes:</label>
+        <input type="number" class="form-control" id="staffBikeCount" placeholder="Enter number of staff bikes">
+    </div>
+    <div class="form-group">
+        <label for="staffBikeMileage">Mileage per Bike (km/month):</label>
+        <input type="number" class="form-control" id="staffBikeMileage" placeholder="Enter mileage">
+    </div>
+   
+   
+</div>
+
+<!-- Shuttles Section -->
+<div class="section-title">Shuttles</div>
+<div class="form-row">
+    <div class="form-group">
+        <label for="shuttleCount">Number of Shuttles:</label>
+        <input type="number" class="form-control" id="shuttleCount" placeholder="Enter number of shuttles">
+    </div>
+    <div class="form-group">
+        <label for="shuttleMileage">Mileage per Shuttle (km/month):</label>
+        <input type="number" class="form-control" id="shuttleMileage" placeholder="Enter mileage">
+    </div>
+    
+   
+</div>
+
+<!-- Tractors Section -->
+<div class="section-title">Tractors</div>
+<div class="form-row">
+    <div class="form-group">
+        <label for="tractorCount">Number of Tractors:</label>
+        <input type="number" class="form-control" id="tractorCount" placeholder="Enter number of tractors">
+    </div>
+    <div class="form-group">
+        <label for="tractorMileage">Mileage per Tractor (km/month):</label>
+        <input type="number" class="form-control" id="tractorMileage" placeholder="Enter mileage">
+    </div>
+  
+  
+</div>
+      <!-- Plants Section -->
+      <div class="section-title1">University Generators</div>
+      <div class="form-row">
+        <div class="form-group">
+            <label for="tractorCount">Number of Generators:</label>
+            <input type="number" class="form-control" id="Generatorcount" placeholder="Enter number of tractors">
+        </div>
+        <div class="form-group">
+            <label for="tractorMileage">Fuel consumption per Generator (consumption/month):</label>
+            <input type="number" class="form-control" id="consumption" placeholder="Enter mileage">
+        </div>
+     
+      
+      </div>
+        
+          
+
+            <!-- Electricity Section -->
+            <div class="section-title1">Electricity Usage</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="electricityUsage">Electricity Usage (kWh/month):</label>
+                    <input type="number" class="form-control" id="electricityUsage" placeholder="Enter electricity usage">
+                </div>
+               
+            </div>
+
+            <!-- Gas Usage Section -->
+            <div class="section-title1">Gas Usage</div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="gasUsage">Gas Usage (m³/month):</label>
+                    <input type="number" class="form-control" id="gasUsage" placeholder="Enter gas usage">
+                </div>
+                
+            </div>
+
+         
+            <!-- Calculate Button -->
+        </form>
+
+        <div id="result">
+            <h3>Emissions Results:</h3>
+            <p id="totalVehicleEmissions">Total Vehicle Emissions: 0.00 kg CO2</p>
+            <p id="totalGeneratorEmissions">Total Generator Emissions: 0.00 kg CO2</p>
+            <p id="totalElectricityEmissions">Total Electricity Emissions: 0.00 kg CO2</p>
+            <p id="totalGasEmissions">Total Gas Emissions: 0.00 kg CO2</p>
+               <p id="netCarbonFootprint">Net Carbon Footprint: 0.00 kg CO2</p>
+        </div>
+        <button type="button" class="btn btn-primary btn-block" id="calculateButton">Calculate Total Footprint</button>
+        
+    </div>
+ 
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy;. All rights reserved.</p>
+    </footer>
+    
+ <script src="script.js"></script>
+</body>
+</html>
